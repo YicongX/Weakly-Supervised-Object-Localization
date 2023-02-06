@@ -5,7 +5,7 @@ When we use a classification network like AlexNet, it is trained using a classif
 
 We used the PyTorch framework to design our models, train and test them. We also used Weights and Biases for visualizations and to log our metrics.
 
-# Data Set
+# Dataset
 We trained and tested the model using the [PASCAL VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html) data. The Pascal VOC dataset comes with bounding box annotations, however, we did not use bounding box annotations in the weakly-supervised setting.
 
 1. First download the image dataset and annotations. Use the following commands to setup the data, and let's say it is stored at location `$DATA_DIR`.

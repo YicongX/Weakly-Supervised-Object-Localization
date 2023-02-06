@@ -5,6 +5,19 @@ When we use a classification network like AlexNet, it is trained using a classif
 
 We used the PyTorch framework to design our models, train and test them. We also used Weights and Biases for visualizations and to log our metrics.
 
+# Data Set
+We trained and tested the model using the [PASCAL VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html) data. The Pascal VOC dataset comes with bounding box annotations, however, we did not use bounding box annotations in the weakly-supervised setting.
+
+1. First download the image dataset and annotations. Use the following commands to setup the data, and let's say it is stored at location `$DATA_DIR`.
+```bash
+$ # First, cd to a location where you want to store ~0.5GB of data.
+$ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
+$ tar xf VOCtrainval_06-Nov-2007.tar
+$ # Also download the test data
+$ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar && tar xf VOCtest_06-Nov-2007.tar
+$ cd VOCdevkit/VOC2007/
+$ export DATA_DIR=$(pwd)
+
 # Paper Cited
 1. Oquab, Maxime, et al. "Is object localization for free?-weakly-supervised learning with convolutional neural networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.
 2. Bilen, Hakan, and Andrea Vedaldi. "Weakly supervised deep detection networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016. 

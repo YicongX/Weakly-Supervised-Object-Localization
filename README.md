@@ -4,3 +4,7 @@ In this project, we train object detectors with only image-level annotations and
 When we use a classification network like AlexNet, it is trained using a classification loss (cross-entropy). Therefore, in order to minimize this loss function, the network maximizes the likelihood for a given class. Since CNNs preserve spatial locality, this means that the model implicitly learns to produce high activations in the feature map around the regions where an object is present. We used this property to approximately localize the object in the image. This is called a weakly-supervised paradigm: supervised because we have image-level classification labels, but weak since we don't have ground-truth bounding boxes.
 
 We used the PyTorch framework to design our models, train and test them. We also used Weights and Biases for visualizations and to log our metrics.
+
+# Paper Cited
+1. Oquab, Maxime, et al. "Is object localization for free?-weakly-supervised learning with convolutional neural networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.
+2. Bilen, Hakan, and Andrea Vedaldi. "Weakly supervised deep detection networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016. 

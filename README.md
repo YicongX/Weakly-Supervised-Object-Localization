@@ -26,9 +26,12 @@ $ export DATA_DIR=$(pwd)
 ## Results
 ### Object Localization
 Here are a couple examples of object localization using modeified AlexNet backbone. They have been colorized using the 'jet' color
+
 ![image](https://user-images.githubusercontent.com/72159394/216883690-1da063c4-7b13-40e7-93ab-256f8541a1d6.png)
+
 ### Weakly Supervised Deep Detection Networks 
 In WSDDN, the images and region proposals are taken as input into the spatial pyramid pooling (SPP) layer, both classification and detection is done on these regions, and class scores and region scores are computed & combined to predict the best possible bounding box. 
+
 ![image](https://user-images.githubusercontent.com/72159394/216884251-3a19e732-2145-4d94-a264-27ec0cc1b285.png)
 ![image](https://user-images.githubusercontent.com/72159394/216884292-b792cc3a-f1e1-4a9b-9c37-0e350a8d5662.png)
 

@@ -17,6 +17,7 @@ $ # Also download the test data
 $ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar && tar xf VOCtest_06-Nov-2007.tar
 $ cd VOCdevkit/VOC2007/
 $ export DATA_DIR=$(pwd)
+```
 
 # Paper Cited
 1. Oquab, Maxime, et al. "Is object localization for free?-weakly-supervised learning with convolutional neural networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.

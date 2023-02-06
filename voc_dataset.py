@@ -76,8 +76,6 @@ class VOCDataset(Dataset):
          gt_class_list is a list of the class ids (separate for each instance)
          gt_boxes is a list of [xmin, ymin, xmax, ymax] values in the range 0 to 1
         """
-
-        # Make sure you understand how the GT boxes and class labels are loaded
         label_list = []
 
         for index in self.index_list:

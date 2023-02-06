@@ -153,12 +153,9 @@ class VOCDataset(Dataset):
         gt_class_list, gt_boxes = self.anno_list[index][2], self.anno_list[index][3]
 
         """
-        TODO:
             1. Load bounding box proposals for the index from self.roi_data. The proposals are of the format:
             [y_min, x_min, y_max, x_max] or [top left row, top left col, bottom right row, bottom right col]
-            2. Normalize in the range (0, 1) according to image size (be careful of width/height and x/y correspondences)
-            3. Make sure to return only the top_n proposals based on proposal confidence ("boxScores")!
-            4. You may have to write a custom collate_fn since some of the attributes below may be variable in number for each data point
+            2. Normalize in the range (0, 1) according to image size
         """
         ret = {}
         if self.top_n is not None:
